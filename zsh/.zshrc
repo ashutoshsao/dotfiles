@@ -6,10 +6,10 @@ export NVM_DIR="$HOME/.nvm"
 PROMPT='%1~ $ '
 
 # opencode
-export PATH=/Users/ashutosh/.opencode/bin:$PATH
+export PATH="$HOME/.opencode/bin:$PATH"
 
 # google-cloud-sdk
-export PATH=/opt/homebrew/share/google-cloud-sdk/bin:$PATH
+[ -d "/opt/homebrew/share/google-cloud-sdk/bin" ] && export PATH="/opt/homebrew/share/google-cloud-sdk/bin:$PATH"
 
 alias k="kubectl"
 
