@@ -33,8 +33,12 @@ else
   COLOR=$BATTERY_COLOR_NORMAL
 fi
 
+BOLT_ICON=$'\xef\x83\xa7'
+
 if [ "$CHARGING" != "" ]; then
   COLOR=$BATTERY_COLOR_CHARGING
+  sketchybar --set "$NAME" icon="$ICON" icon.color="$COLOR" \
+    label="$BOLT_ICON" label.color="$COLOR" label.drawing=on
+else
+  sketchybar --set "$NAME" icon="$ICON" icon.color="$COLOR" label.drawing=off
 fi
-
-sketchybar --set "$NAME" icon="$ICON" icon.color="$COLOR" label.drawing=off
