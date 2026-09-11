@@ -16,6 +16,7 @@ export EDITOR="nvim"
 export VISUAL="nvim"
 
 alias k="kubectl"
+alias ltree="tree -I 'node_modules|.git'"
 
 # force emacs keybindings — zsh auto-switches to vi mode because "nvim" contains "vi",
 # which silently breaks Option+Delete and other word-editing shortcuts
